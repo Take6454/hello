@@ -3,8 +3,8 @@
 import shutil
 import sys
 
-def check_disk_usage(disk, min_absolute, min_percent):
-    """Returns True if there is enough free disl space, false otherwise>"""
+def check_disk_full(disk, min_absolute, min_percent):
+    """Returns True if there is enough free disl space, false otherwise."""
     du = shutil.disk_usage(disk)
     #Calculatethe percentage of free space
     percent_free = 100 * du.free /du.total
