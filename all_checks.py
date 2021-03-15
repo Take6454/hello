@@ -3,7 +3,7 @@
 import shutil
 import sys
 
-def check_reboot()
+def check_reboot():
     return os.path.exists("/run/reboot-required")
 
 def check_disk_full(disk, min_gb, min_percent):
